@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>second project</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap">
+</head>
+</html>
+  <style>
+   * {
+  font-family: 'Poppins', sans-serif;
+  font-size: 25px;
+  }
+  
+    body {
+      margin: 0;
+      padding: 20px;
+      background: #f5f5f5;
+    }
+    
+    .grid-container {
+      display: grid; 
+        grid-template-areas:
+          "createpost socialmedia socialmedia schedule  "
+           "al platforms  Maintain schedule"
+          "al audience followers followers" ;
+
+
+      .createpost { grid-area: createpost;}
+      .socialmedia   { grid-area: socialmedia; }
+      .schedule { grid-area: schedule; }
+      .al  { grid-area: al; }
+      .platforms  { grid-area: platforms; }   
+      .Maintains { grid-area: Maintains;}
+      .audience {grid-area: audience;}
+      .followers {grid-area: followers;}
+
+    grid-template-columns: 1fr 3fr;
+      gap: 20px;
+    }
+
+    .card {
+      padding: 20px;
+      border-radius: 10px;
+      background-color: white;
+      box-shadow: 0 10px 10px rgba(0,0,0,0.05);
+    }
+
+  
+    .purple {
+      background-color:#7650dcff;
+      color: white ;
+    }
+
+    .yellow {
+      background-color: #ffcd63;
+    }
+
+    .light {
+      background-color: #fceeea;
+    }
+
+    .light-purple {
+      background-color: #e9dfff;
+    }
+
+  
+    .small-img{
+      width: 300px;
+      height: auto;
+    }
+    img{
+      width: 100%;
+      height: auto;
+      margin-top: 10px;
+    }
+    
+.followers {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   padding: 20px;
+}
+
+  </style>
+<body>
+
+  <div class="grid-container">
+
+    <div class="card light createpost">
+      <h3 style="padding-right: -100px;">creat and <br>schedule <br> content <br>
+      <span style="color:#7650dcff ">quicker.</span></h3>
+      <img src="illustration-create-post.webp" class="small-img">
+    </div>
+    
+    <div class="card purple socialmedia">
+      <h2 style="padding-left: 120px; font-size: 57px; line-height: 1.3;letter-spacing: 0.035em; font-weight: 900;">Social Media <span style="color: #ffcd63;">10x </span> Faster with AI</h2>
+      <img src="illustration-five-stars.webp" class="small-img" style="padding-left: 200px; padding-top: 100px;"> 
+      <p style="padding-left: 180px; margin-top: 1px;">Over 4,000 5-star reviews</p>
+    </div>
+
+    <div class="card light-purple schedule ">
+      <h3>Schedule to <br>social media.</h3>
+      <img src="illustration-schedule-posts.webp" class="small-img">
+      <p ><h4>Optimize post timings <br>to publish content at <br>the perfect time for <br> your audience. </h4></p>
+    </div>
+
+    <div class="card yellow al ">
+      <h3>Write your <br> content <br>using AI.</h3>
+      <img src="illustration-ai-content.webp" class="small-img"
+      style="padding-top: 90px;">
+    </div>
+
+    <div class="card platforms">
+      <img src="illustration-multiple-platforms.webp" class="small-img">
+      <h3>Manage <br>multiple <br> accounts and <br> platforms.</h3>
+    </div>
+
+    <div class="card yellow Maintain">
+      <h3>Maintain a <br>consistent <br>posting <br>schedule.</h3>
+      <img src="illustration-consistent-schedule.webp" class="small-img">
+    </div>
+
+    <div class="card audience ">
+      <h1>>56%</h1>
+      <h3>faster audience growth </h3>
+      <img src="illustration-audience-growth.webp" class="small-img">
+    </div>
+
+    <div class="card purple followers">
+      
+      <img src="illustration-grow-followers.webp" class="small-img"  >
+      <h3>Grow followers with non-stop content.</h3>
+    </div>
+  </div>
+
+</body>
+</html>
+
